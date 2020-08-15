@@ -11,6 +11,28 @@ This script will use the Meraki API to query all rogue BSSIDs on a given Meraki 
 
 ### How to run the script:
 
+#### Installation
+
+1. Clone the repo
+```console
+git clone https://github.com/obrigg/meraki-rogue-investigator.git
+```
+
+
+2. cd into directory
+```console
+cd meraki-rogue-investigator
+```
+3. Create the virtual environment in a sub dir in the same directory
+```console
+python3 -m venv venv
+```
+4. Start the virtual environment and install requirements.txt from the <fmc_find_nat_rules>
+```console
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
 #### Generate your Meraki API Key
 
 1. Access the [Meraki dashboard](dashboard.meraki.com).
@@ -23,11 +45,14 @@ This script will use the Meraki API to query all rogue BSSIDs on a given Meraki 
 
 #### Storing the Meraki API Key as an environment variable
 Once the API key is obtained, you'll need to store the Meraki dashboard API key as an environment variable:
-`export MERAKI_KEY = <YOUR MERAKI API KEY>`
-and install the Meraki SDK via `pip install -r requirements.txt`
+```console
+export MERAKI_KEY = <YOUR MERAKI API KEY>
+```
 
 Now you're ready. Good luck!
-`python run.py`
+```console
+python run.py
+```
 
 
 ----
