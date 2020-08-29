@@ -132,7 +132,7 @@ def CheckRogue(rogues, userInput):
                 isFound = True
                 PrintSSID(rogue)
     if not isFound:
-        print("\n[red]Invalid MAC Address or SSID entered[/red]. Please try entering a SSID/BSSID, 'display' to display the list of SSIDs or type 'quit' to quit")
+        print("\n[red]Invalid MAC Address or SSID entered[/red].")
 
 def PrintSSID(rogue):
     table = Table(title="Rogue SSID Details")
