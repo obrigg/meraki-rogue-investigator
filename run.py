@@ -202,4 +202,5 @@ if __name__ == '__main__':
             CheckRogue(filteredRogues, userInput)
         else:
             print('Quiting...\n')
+            break
         userInput = ""
